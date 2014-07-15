@@ -1,0 +1,74 @@
+Module to capture pointclouds from segmented regions in 2D or 2.\+5D (depth) images
+
+\subsection*{Description}
+
+This module combines disparity and segmentation information in order to retrieve 3D clouds of desired 2D regions. These regions can be chosen from a user defined polygon, from a segmentation algorithm, or from 2D (in color) or 3D (in depth) flood filling. When using segmentation modules (2D or 3D), seeding can be performed automatically.
+
+\subsection*{Dependencies}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/robotology/yarp}{\tt Y\+A\+RP}
+\item \href{https://github.com/robotology/icub-main}{\tt i\+Cub}
+\item \href{https://github.com/robotology/icub-contrib-common}{\tt icub-\/contrib-\/common}
+\item \href{http://opencv.org/}{\tt Open\+CV}
+\item \href{https://github.com/robotology/stereo-vision}{\tt S\+FM}
+\end{DoxyItemize}
+
+\subsection*{Reconstruction Options}
+
+This modules interfaces between segmentation modules and S\+FM in order to provide the 3D reconstruction of an object delimited by a contour in the image. In order to obtain this contour, 4 modes are provided\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries seg\+:} 2D segmentation (requires external segmentation module). When this option is called, the contour is provided by an external segmentation module.
+\item {\bfseries flood\+:} 2D color flood. The object\textquotesingle{}s contour is obtained by performing a 2D color flood, based on the thresholding parameter {\itshape color\+\_\+distance}.
+\item {\bfseries flood3D} 3D depth flood. The contour is determined by a flood operation performed on the depth image, controlled by the thresholding parameter {\itshape space\+\_\+distance}.
+\item {\bfseries polygon} User selected polygon contour. The contour is provided by the user as a contour by selecting the vertices on a connected yarpview window.
+\end{DoxyItemize}
+
+\subsection*{Seed feeding options}
+
+In order to select which of the possible regions of the image is segmented, a seed usually needs to be provided. In this module, the seed can be provided in several different ways\+:
+\begin{DoxyItemize}
+\item In the three first options above ({\ttfamily seg}, {\ttfamily flood} and {\ttfamily flood3d}) the initial seed to perform segmentation can be provided in 3 different ways\+:
+\item If parameter {\ttfamily seed\+Auto} is set to {\itshape true}, the seed will be obtained automatically.
+\begin{DoxyItemize}
+\item In segmentations options {\ttfamily seg} and {\ttfamily flood}, seed has to be provided by a tracker whose ooutput (u v coordinates) is connected to the {\ttfamily /seg2cloud/seed\+:i} port.
+\item If the segmentation option is {\ttfamily flood3d}, the seed is computed automatically as the center of the closest blob (as in the disb\+Blobber module).
+\end{DoxyItemize}
+\item If parameter {\ttfamily seed\+Auto} is set to {\itshape false}, the seed can be coveyed in 2 further ways\+:
+\begin{DoxyItemize}
+\item By clicking on a connected yarpview window whose output is connected to the {\ttfamily /seg2cloud/seed\+:i}port.
+\item As {\itshape explicit u v coordinates} given after the segmentation command. For example {\ttfamily  seg 102 175 }.
+\end{DoxyItemize}
+\item In the case where the segmentation option is set to {\ttfamily polygon}, no seed is needed, as the region is fully provided by the user.
+\end{DoxyItemize}
+
+The results obtained with each of these options can be observed below.
+
+\subsection*{Images of reconstruction results\+:}
+
+\subsubsection*{seg (2D segmentation provided by \href{https://github.com/robotology/segmentation/tree/master/lbpExtract}{\tt lbp\+Exptract})}
+
+
+
+\subsubsection*{flood (2D color flood)}
+
+
+
+\subsubsection*{flood3D (3D spatial flood)}
+
+
+
+\subsubsection*{polygon (Selected polygon segmentation)}
+
+
+
+\subsection*{Documentation}
+
+Online documentation is available here\+: \href{http://robotology.github.com/segmentation-to-pointcloud}{\tt http\+://robotology.\+github.\+com/segmentation-\/to-\/pointcloud}.
+
+\subsection*{License}
+
+Material included here is Copyright of {\itshape i\+Cub Facility -\/ Istituto Italiano di Tecnologia} and is released under the terms of the G\+PL v2.\+0 or later. See the file L\+I\+C\+E\+N\+SE for details. 

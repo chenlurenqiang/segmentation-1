@@ -1,0 +1,440 @@
+\section{lbp\+Extract\+\_\+\+I\+D\+L\+Server Class Reference}
+\label{classlbpExtract__IDLServer}\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+
+
+\hyperlink{classlbpExtract__IDLServer}{lbp\+Extract\+\_\+\+I\+D\+L\+Server} Interface.  
+
+
+
+
+{\ttfamily \#include $<$lbp\+Extract\+\_\+\+I\+D\+L\+Server.\+h$>$}
+
+
+
+Inherits Wire.
+
+
+
+Inherited by S\+E\+G\+M\+E\+N\+T\+Module.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a9d9b1223c68851e94b0c8c0bd8d3cedc}{reset} ()
+\begin{DoxyCompactList}\small\item\em Resets all the histograms. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a4086feb2a3cee548670673235277b6f0}{quit} ()
+\begin{DoxyCompactList}\small\item\em Quit the module. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a2391f554973a3b7d32d6eea6bbb233d7}{set\+Radius} (const int32\+\_\+t radius)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the lbp operators. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a8c9a3adfcb9e7d37c4388bc3950da23b}{get\+Radius} ()
+\begin{DoxyCompactList}\small\item\em Gets the radius of the lbp operators. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_aa72b58e41cf97d26825515cc9d5e6aa6}{set\+Neighbours} (const int32\+\_\+t neighbours)
+\begin{DoxyCompactList}\small\item\em Sets the neighbours value of the lbp operators. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_abf7693b9f3f63c2a16e163a3991b7d01}{get\+Neighbours} ()
+\begin{DoxyCompactList}\small\item\em Gets the neighbours of the lbp operators. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a693ea8bf9638a27fdf3f7d40f7ad8f51}{get\+Top\+Bound} ()
+\begin{DoxyCompactList}\small\item\em Gets the top bound (Y) limit for the blobs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a50677882bf32262601b91046a2dcdbf2}{set\+Top\+Bound} (const int32\+\_\+t top\+Bound)
+\begin{DoxyCompactList}\small\item\em Sets the top bound (Y) limit for the blobs. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_ae98976e14296fd7fd3596da8faf862d3}{get\+Min\+Arc\+Length} ()
+\begin{DoxyCompactList}\small\item\em Gets the minimum arc length of the allowed blobs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_abd1ebed4459c05a4b849f8eebea14127}{set\+Min\+Arc\+Length} (const int32\+\_\+t min\+Arc\+Length)
+\begin{DoxyCompactList}\small\item\em Sets the minimum arc length of the allowed blobs. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_ae6f220a2b984c7211bd59beca4db0373}{get\+Max\+Arc\+Length} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum arc length of the allowed blobs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_abc379ba01952949df03f977c74884ade}{set\+Max\+Arc\+Length} (const int32\+\_\+t max\+Arc\+Length)
+\begin{DoxyCompactList}\small\item\em Sets the maximum arc length of the allowed blobs. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a46c4f38052cd2abd334e4e0f0263fab4}{get\+Max\+Area} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum area of the allowed blobs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a81dbd91a1460cdb450a7f7824e6d9953}{set\+Max\+Area} (const int32\+\_\+t max\+Area)
+\begin{DoxyCompactList}\small\item\em Sets the maximum area of the allowed blobs. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a3f6f2aba33eeb0a15d73fdfc5817ef7a}{get\+Min\+Area} ()
+\begin{DoxyCompactList}\small\item\em Gets the minimum area of the allowed blobs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a13eb918e54b2eee6fe2811fbe8f6aee6}{set\+Min\+Area} (const int32\+\_\+t min\+Area)
+\begin{DoxyCompactList}\small\item\em Sets the minimum area of the allowed blobs. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a48094f72a89aa3218e3449dfe071f0f7}{get\+Num\+Iteration} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of iteration for the grab\+Cut segmentation algorithm. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a2955fa69c12b59a03c2b1e130747b054}{set\+Num\+Iteration} (const int32\+\_\+t num\+Iteration)
+\begin{DoxyCompactList}\small\item\em Sets the number of iteration for the grab\+Cut segmentation algorithm. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a88f2492af4a66eaf9be8ceb28c862fe5}{reset\+All\+Values} ()
+\begin{DoxyCompactList}\small\item\em resets all values to the default ones. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_aebf9bfaa7a16309244177c4b7b094e2a}{setbb\+Offset} (const int32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Sets the offset of the bounding box. \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \hyperlink{classlbpExtract__IDLServer_a2260626a2137fc9ffe9364fad3444024}{getbb\+Offset} ()
+\begin{DoxyCompactList}\small\item\em Gets the current offset of the bounding box. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlbpExtract__IDLServer_a1b9021d363199f1a334c7ec2c23801b1}{verbosity} (const int32\+\_\+t bool\+Verbosity)
+\begin{DoxyCompactList}\small\item\em Sets the verbosity of the algorithm. \end{DoxyCompactList}\item 
+virtual yarp\+::os\+::\+Bottle \hyperlink{classlbpExtract__IDLServer_a9d92e9eba6c2ea72a43b1c8077bc6d0a}{get\+\_\+component\+\_\+around} (const int32\+\_\+t x, const int32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Gets all the components (points) that belong to any of the segmented blobs. \end{DoxyCompactList}\item 
+\mbox{\label{classlbpExtract__IDLServer_a677697653e78ed82aaa6543eb875bd41}} 
+virtual bool {\bfseries read} (yarp\+::os\+::\+Connection\+Reader \&connection)
+\item 
+\mbox{\label{classlbpExtract__IDLServer_a13b6fbd034b38f4b5879381dabad05ed}} 
+virtual std\+::vector$<$ std\+::string $>$ {\bfseries help} (const std\+::string \&function\+Name=\char`\"{}-\/-\/all\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classlbpExtract__IDLServer}{lbp\+Extract\+\_\+\+I\+D\+L\+Server} Interface. 
+
+Definition at line 18 of file lbp\+Extract\+\_\+\+I\+D\+L\+Server.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classlbpExtract__IDLServer_a9d92e9eba6c2ea72a43b1c8077bc6d0a}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+\_\+component\+\_\+around@{get\+\_\+component\+\_\+around}}
+\index{get\+\_\+component\+\_\+around@{get\+\_\+component\+\_\+around}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+\_\+component\+\_\+around()}{get\_component\_around()}}
+{\footnotesize\ttfamily virtual yarp\+::os\+::\+Bottle lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+\_\+component\+\_\+around (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{x,  }\item[{const int32\+\_\+t}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets all the components (points) that belong to any of the segmented blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of seed point \\
+\hline
+{\em y} & y coordinate of seed point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bottle containing a list of points belonging to the segmented blob 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a2260626a2137fc9ffe9364fad3444024}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!getbb\+Offset@{getbb\+Offset}}
+\index{getbb\+Offset@{getbb\+Offset}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{getbb\+Offset()}{getbbOffset()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::getbb\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the current offset of the bounding box. 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_ae6f220a2b984c7211bd59beca4db0373}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Max\+Arc\+Length@{get\+Max\+Arc\+Length}}
+\index{get\+Max\+Arc\+Length@{get\+Max\+Arc\+Length}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Max\+Arc\+Length()}{getMaxArcLength()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Max\+Arc\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maximum arc length of the allowed blobs. 
+
+\begin{DoxyReturn}{Returns}
+the current maximum arc length 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a46c4f38052cd2abd334e4e0f0263fab4}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Max\+Area@{get\+Max\+Area}}
+\index{get\+Max\+Area@{get\+Max\+Area}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Max\+Area()}{getMaxArea()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Max\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the maximum area of the allowed blobs. 
+
+\begin{DoxyReturn}{Returns}
+the current maximum area 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_ae98976e14296fd7fd3596da8faf862d3}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Min\+Arc\+Length@{get\+Min\+Arc\+Length}}
+\index{get\+Min\+Arc\+Length@{get\+Min\+Arc\+Length}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Min\+Arc\+Length()}{getMinArcLength()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Min\+Arc\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the minimum arc length of the allowed blobs. 
+
+\begin{DoxyReturn}{Returns}
+the current minimum arc length 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a3f6f2aba33eeb0a15d73fdfc5817ef7a}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Min\+Area@{get\+Min\+Area}}
+\index{get\+Min\+Area@{get\+Min\+Area}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Min\+Area()}{getMinArea()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Min\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the minimum area of the allowed blobs. 
+
+\begin{DoxyReturn}{Returns}
+the current minimum area 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_abf7693b9f3f63c2a16e163a3991b7d01}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Neighbours@{get\+Neighbours}}
+\index{get\+Neighbours@{get\+Neighbours}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Neighbours()}{getNeighbours()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the neighbours of the lbp operators. 
+
+\begin{DoxyReturn}{Returns}
+the current radius of the lpb operator 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a48094f72a89aa3218e3449dfe071f0f7}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Num\+Iteration@{get\+Num\+Iteration}}
+\index{get\+Num\+Iteration@{get\+Num\+Iteration}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Num\+Iteration()}{getNumIteration()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Num\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of iteration for the grab\+Cut segmentation algorithm. 
+
+\begin{DoxyReturn}{Returns}
+the current maximum arc length 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a8c9a3adfcb9e7d37c4388bc3950da23b}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the radius of the lbp operators. 
+
+\begin{DoxyReturn}{Returns}
+the current radius of the lpb operator 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a693ea8bf9638a27fdf3f7d40f7ad8f51}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!get\+Top\+Bound@{get\+Top\+Bound}}
+\index{get\+Top\+Bound@{get\+Top\+Bound}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{get\+Top\+Bound()}{getTopBound()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::get\+Top\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the top bound (Y) limit for the blobs. 
+
+\begin{DoxyReturn}{Returns}
+the current top bound limit 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a4086feb2a3cee548670673235277b6f0}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!quit@{quit}}
+\index{quit@{quit}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Quit the module. 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a9d9b1223c68851e94b0c8c0bd8d3cedc}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!reset@{reset}}
+\index{reset@{reset}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resets all the histograms. 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a88f2492af4a66eaf9be8ceb28c862fe5}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!reset\+All\+Values@{reset\+All\+Values}}
+\index{reset\+All\+Values@{reset\+All\+Values}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{reset\+All\+Values()}{resetAllValues()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::reset\+All\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+resets all values to the default ones. 
+
+(acts as a backup) \begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_aebf9bfaa7a16309244177c4b7b094e2a}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!setbb\+Offset@{setbb\+Offset}}
+\index{setbb\+Offset@{setbb\+Offset}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{setbb\+Offset()}{setbbOffset()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::setbb\+Offset (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the offset of the bounding box. 
+
+This increases the size of the bb to add more backgound \begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_abc379ba01952949df03f977c74884ade}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Max\+Arc\+Length@{set\+Max\+Arc\+Length}}
+\index{set\+Max\+Arc\+Length@{set\+Max\+Arc\+Length}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Max\+Arc\+Length()}{setMaxArcLength()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Max\+Arc\+Length (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{max\+Arc\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the maximum arc length of the allowed blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Arc\+Length,integer} & containing the max\+Arc\+Length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a81dbd91a1460cdb450a7f7824e6d9953}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Max\+Area@{set\+Max\+Area}}
+\index{set\+Max\+Area@{set\+Max\+Area}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Max\+Area()}{setMaxArea()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Max\+Area (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{max\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the maximum area of the allowed blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Area,integer} & containing the max\+Area \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_abd1ebed4459c05a4b849f8eebea14127}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Min\+Arc\+Length@{set\+Min\+Arc\+Length}}
+\index{set\+Min\+Arc\+Length@{set\+Min\+Arc\+Length}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Min\+Arc\+Length()}{setMinArcLength()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Min\+Arc\+Length (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{min\+Arc\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the minimum arc length of the allowed blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Arc\+Length,integer} & containing the min\+Arc\+Length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a13eb918e54b2eee6fe2811fbe8f6aee6}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Min\+Area@{set\+Min\+Area}}
+\index{set\+Min\+Area@{set\+Min\+Area}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Min\+Area()}{setMinArea()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Min\+Area (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{min\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the minimum area of the allowed blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Area,integer} & containing the min\+Area \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_aa72b58e41cf97d26825515cc9d5e6aa6}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Neighbours@{set\+Neighbours}}
+\index{set\+Neighbours@{set\+Neighbours}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Neighbours()}{setNeighbours()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Neighbours (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{neighbours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the neighbours value of the lbp operators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighbours} & integer containing the number of neighbours \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a2955fa69c12b59a03c2b1e130747b054}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Num\+Iteration@{set\+Num\+Iteration}}
+\index{set\+Num\+Iteration@{set\+Num\+Iteration}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Num\+Iteration()}{setNumIteration()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Num\+Iteration (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{num\+Iteration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the number of iteration for the grab\+Cut segmentation algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Iteration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a2391f554973a3b7d32d6eea6bbb233d7}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Radius (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the radius of the lbp operators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & integer containing the radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a50677882bf32262601b91046a2dcdbf2}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!set\+Top\+Bound@{set\+Top\+Bound}}
+\index{set\+Top\+Bound@{set\+Top\+Bound}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{set\+Top\+Bound()}{setTopBound()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::set\+Top\+Bound (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{top\+Bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the top bound (Y) limit for the blobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Bound,integer} & containing the top\+Bound \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+\mbox{\label{classlbpExtract__IDLServer_a1b9021d363199f1a334c7ec2c23801b1}} 
+\index{lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}!verbosity@{verbosity}}
+\index{verbosity@{verbosity}!lbp\+Extract\+\_\+\+I\+D\+L\+Server@{lbp\+Extract\+\_\+\+I\+D\+L\+Server}}
+\subsubsection{\texorpdfstring{verbosity()}{verbosity()}}
+{\footnotesize\ttfamily virtual bool lbp\+Extract\+\_\+\+I\+D\+L\+Server\+::verbosity (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{bool\+Verbosity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the verbosity of the algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool\+Verbosity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/dev/icub-\/contrib-\/iit/segmentation/lbp\+Extract/idl\+\_\+dox/lbp\+Extract\+\_\+\+I\+D\+L\+Server.\+h\end{DoxyCompactItemize}
